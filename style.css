@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  margin-top: 1rem;
+  color: white;
+  padding-left: 2rem;
+  font-size: 40px;
+}
+.nav-links ul li {
+  text-align: left;
+  display: inline-block;
+  padding: 2rem;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+/* 
+.nav-links ul li a.active {
+  background-color: rgb(177, 177, 241);
+  color: black;
+  width: 3rem;
+} */
+/* .nav-links ul li a:hover:not(.active){
+  content: "";
+  background:rgb(117, 108, 108);
+  color: white;
+   */
+
+/* } */
+
+.nav-links ul li::after {
+  content: "";
+  background: rgb(177, 177, 241);
+  width: 0px;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.about {
+  text-align: center;
+  margin: auto;
+  width: 80px;
+  display: inline;
+  padding-top: 100px;
+}
+.about h1 {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+.about-col {
+  box-sizing: border-box;
+  padding: 20px 12px;
+  background: rgb(177, 177, 241);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  width: 30%;
+  flex-basis: 31%;
+  transition: 0.5s;
+}
+
+.h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.about-col:hover {
+  box-shadow: 0 0 20px 0 rgba(14, 13, 13, 0.4);
+}
+
+.pro-ject {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: inline;
+}
+
+.project {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+}
+.project p {
+  color: black;
+}
+
+.images {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  height: 68vh;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(177, 177, 241, 0.7);
+}
+
+.layer h3 {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
